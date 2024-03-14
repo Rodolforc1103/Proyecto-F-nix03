@@ -30,7 +30,7 @@ pipeline {
     post {
         success {
             emailext(
-                subject: "Build Success: ${currentBuild.fullDisplayName}",
+                subject: "Build Success: correcto el cambio ${currentBuild.fullDisplayName}",
                 body: "The build ${currentBuild.fullDisplayName} succeeded.",
                 to: "rodoracardales@gmail.com"
             )
